@@ -52,7 +52,6 @@ header nav button:hover {
 
 #intro img {
   margin: 1rem 4rem 2rem 1rem;
-  height: 50%;
   width: 38%;
   border-radius: 0.5rem;
 }
@@ -82,11 +81,11 @@ header nav button:hover {
   box-shadow: 0 0 8px palevioletred;
   border-radius: 0.4rem;
   margin-bottom: 2rem;
-  cursor: pointer;
 }
 
 #introMe button:hover {
   transform: scale(1.1); 
+  cursor: pointer;
 }
 
 #introMe p {
@@ -157,7 +156,49 @@ footer a img:hover {
 
 }
 
-@media all and (max-width: 800px) {
+@media (max-width: 1364px) {
+  header h1 {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    margin-left: 0;
+    border-bottom: 1px dashed grey;
+  }
+
+  header nav {
+    margin: 1% auto;
+    justify-content: space-evenly;
+  }
+  header nav button {
+    margin: 0;
+  }
+
+  /* intro */
+  #intro {
+    flex-wrap: wrap;
+  }
+
+  #intro h3 {
+    margin: 0 auto;
+    border-bottom: solid 2px grey;
+    padding: 0 1rem 1rem;
+  }
+  #intro img {
+    margin: 1.5rem auto;
+  }
+
+  #introMe {
+    align-items: center;
+  }
+
+  /* projects-images */
+  #images {
+    justify-content: space-evenly;
+    border-top: 1px dashed grey;
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 1035px) {
   /* header */
   header {
     padding-bottom: 1.2rem
@@ -193,6 +234,7 @@ footer a img:hover {
 
   #intro img {
     margin: 1.5rem auto;
+    width: 387.59px;
   }
 
   #introMe {
@@ -207,7 +249,13 @@ footer a img:hover {
   }
 }
 
-@media all and (max-width: 500px) {
+@media (max-width: 800px) {
+  #intro img {
+    width: 49%;
+  }
+}
+
+@media (max-width: 500px) {
   /* header */
   header h1 {
     text-align: center;
@@ -215,7 +263,7 @@ footer a img:hover {
 
   header nav {
     justify-content: space-around;
-    margin: 2rem auto;
+    margin: 1% auto;
   }
 
   /* intro */ 
@@ -226,6 +274,7 @@ footer a img:hover {
 
   #intro img {
     margin: 1.5rem auto;
+    width: 67%;
   }
 
   #introMe button {
@@ -246,45 +295,4 @@ footer a img:hover {
   }
 }
 
-@media all and (max-width: 1374px) {
-  header h1 {
-    text-align: center;
-    padding-bottom: 1.5rem;
-    margin-left: 0;
-    border-bottom: 1px dashed grey;
-  }
 
-  header nav {
-    margin: 0 auto;
-    justify-content: space-evenly;
-  }
-  header nav button {
-    margin: 0;
-  }
-
-  /* intro */
-  #intro {
-    flex-wrap: wrap;
-  }
-
-  #intro h3 {
-    margin: 0 auto;
-    border-bottom: solid 2px grey;
-    padding: 0 1rem 1rem;
-  }
-  #intro img {
-    margin: 1.5rem auto;
-  }
-
-  #introMe {
-    align-items: center;
-  }
-
-  /* projects-images */
-  #images {
-    justify-content: space-evenly;
-    border-top: 1px dashed grey;
-    padding-top: 1rem;
-  }
-}
-}
